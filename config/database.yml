@@ -10,7 +10,6 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  database: my_database_production
-  pool: 5
-  timeout: 5000
+  database: sample_app_production
+  username: sample_app
+  password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
